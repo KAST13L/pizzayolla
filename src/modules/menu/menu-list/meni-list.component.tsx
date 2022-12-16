@@ -8,7 +8,7 @@ interface MeniListType {
 
 export const MeniList: FC<MeniListType> = ({items}) => {
     return (
-        <div className=" flex flex-wrap gap-10">
+        <div className=" flex flex-wrap gap-10 justify-center">
             {items.map(({image, ...pizza}) => (
                 <MenuItem {...pizza} imagePath={"assets/pizza/" + image} key={`pizza-${pizza.id}`}/>
             ) )}
