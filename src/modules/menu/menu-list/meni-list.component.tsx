@@ -1,12 +1,16 @@
-import React from 'react';
-import pizzaMenu from '@app/mocks/pizza.json'
+import React, {FC} from 'react';
 import {MenuItem} from "@app/modules/menu/menu-item/menu-item.component";
+import {PizzaType} from "@app/modules/menu/types/pizza";
 
-export const MeniList = () => {
+interface MeniListType {
+    items: PizzaType[]
+}
+
+export const MeniList: FC<MeniListType> = ({items}) => {
     return (
         <div className=" flex flex-wrap gap-10">
-            {pizzaMenu.map(({image, ...pizza}) => (
-                <MenuItem {...pizza} imagePath={"assets/pizza/" + image} />
+            {items.map(({image, ...pizza}) => (
+                <MenuItem {...pizza} imagePath={"assets/pizza/" + image} key={`pizza-${pizza.id}`}/>
             ) )}
         </div>
     );
