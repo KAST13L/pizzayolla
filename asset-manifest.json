@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pizzayolla/static/css/main.f46f4510.css",
+    "main.js": "/pizzayolla/static/js/main.b1310e88.js",
+    "index.html": "/pizzayolla/index.html",
+    "main.f46f4510.css.map": "/pizzayolla/static/css/main.f46f4510.css.map",
+    "main.b1310e88.js.map": "/pizzayolla/static/js/main.b1310e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f46f4510.css",
+    "static/js/main.b1310e88.js"
+  ]
+}
