@@ -10,7 +10,7 @@ export const Footer = () => {
             </div>
             <div className="mb-8">
                 <ul>
-                    <FooterLink href={'tel:+0508791762'} children={'+38 (050) 87-91-762'}/>
+                    <FooterLink href={'tel:0508791762'} children={'+38 (050) 87-91-762'}/>
                     <FooterLink href={'mailto:smykdav@gmail.com'} children={'smykdav@gmail.com'}/>
                 </ul>
             </div>
